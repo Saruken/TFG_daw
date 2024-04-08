@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+h1,h2,h3{
+    font-family: 'Rubik', 'Mulish', sans-serif;
+}
+body *{
+    font-family: 'Maven Pro', 'Catamaran', sans-serif;
+}
+body{
+    background-color: darkslateblue;
+}
+main{
+    min-height: 85.9374vh;
+}
+.cabecera_pagina{
+    z-index: 100 !important;
+}
+body>header,body>header>nav,body>footer{
+    height: 6.3vh !important;
+}
+main{
+    min-height: 87.387vh;
+}
+.icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    padding: 1px;
+}
+.icono img{
+    max-height: 6.3vh;
+}
+
+/* juegos */
+.ficha-juego{
+    height: fit-content;
+}
+.ficha-juego div{
+    height: 12rem;
+}
+.info>div{
+    background-color: rgba(0, 0, 0, 0.597);
+}
+.botones-juego>div:last-child{
+    transition: 0.3s;
+    height: 86%;
+    opacity: 0;
+}
+.botones-juego:hover>div{
+    opacity: 1;
+}
+.ficha-juego a p,a .ficha-juego p{
+    color: #aeb0b3;
+    transition: 0.3s;
+}
+.ficha-juego a p:hover,a .ficha-juego p:hover{
+    color: #5fbaa7;
+}
+
+/* ficha juego */
+#comentarios textarea{
+    resize: none;
+}
+.add-lista{
+    position: absolute;
+    top: 9vh;
+    right: 20px;
+}
+.enlace-juego,.color-autor{
+    color: #408f7e;
+    transition: 0.2s;
+}
+.enlace-juego:hover,.color-autor:hover{
+    color: #5fbaa7;
+}
+.opinion input{
+    position: absolute;
+    width: fit-content;
+    right: 10px;
+    top: 15px;
+}
+
+/* listas */
+.listas-card{
+    height: 10rem;
+}
+.listas-card>div>div{
+    height: 100%;
+}
+.listas-card>div>div:last-child{
+    width: calc(100% - 105.6px);
+}
+.listas-card img{
+    max-height: 100%;
+}
+.listas-card h3>a,.paginas>a{
+    color: rgb(248,249,250);
+    transition: 0.3s;
+}
+.listas-card h3>a:hover,.paginas>a:hover{
+    color: #5fbaa7;
+}
+.imagen_lista{
+    height: 100%;
+    object-fit: cover;
+}
+.busca-lista{
+    position: absolute;
+    top: 8vh;
+    right: 30px;
+}
+
+/* perfil */
+.bg-seguidos{
+    background-color: #212529cc;
+}
+
+/*  */
+.formulario-acceso{
+    height: 40vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* func */
+.obf{
+    object-fit: cover;
+    object-position: center;
+}
+.fit{
+    width: fit-content;
+}
+.text-personalizado{
+    color: blueviolet;
+}
+.bg-tengo{
+    background-color: rgb(0, 150, 250);
+}
+.bg-quiero{
+    background-color: rgb(232, 232, 232);
+}
+.rectangulo{
+    aspect-ratio: 0.7;
+}
+.espacio{
+    height: 0px;
+    width: 16px;
+}
+.color-destaca{
+    color: #5fbaa7;
+}
+.filtro{
+    filter: invert();
+}
+
+#slider,#slider>div>div>div{
+    max-height: 30rem;
+    min-height: 30rem;
+}
+#slider img{
+    height: 30rem;
+    object-fit: cover;
+    object-position: top;
+    width: -webkit-fill-available;
+}
+#slider .carousel-caption{
+    background-color: rgba(0, 0, 0, 0.327) !important;
+    color:rgb(232, 232, 232);
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+}
+.notificacion{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    background-color: #000000b3;
+    padding: 1rem;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* landing */
+.landing{
+    height: 20rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.landing::before{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    transform: rotate(-20deg);
+    background-position: center;
+    background-size: contain;
+}
+#landing-1::before{
+    background-image: url('img/landing/lan-1.png');
+    transform: rotate(-10deg);
+}
+#landing-2::before{
+    background-image: url('img/landing/lan-3.png');
+    transform: rotate(5deg);
+}
+#landing-3{
+    height: 30rem;
+}
+#landing-3::before{
+    background-image: url('img/landing/lan-2.png');
+    transform: rotate(5deg);
+    background-size: auto;
+    background-position: top;
+}
+.borde-text{
+    color: white;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    /* text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; */
+}
+#der{
+    margin-left: auto;
+    text-align: right;
+}
+.color-1{
+    background: rgb(72,61,139);
+    background: linear-gradient(120deg, rgba(72,61,139,1) 19%, rgba(108,117,125,1) 100%);
+}
+.color-2{
+    background: rgb(72,61,139);
+    background: linear-gradient(40deg, rgba(72,61,139,1) 19%, rgba(108,117,125,1) 100%);
+}
+.color-3{
+    background: rgb(72,61,139);
+    background: linear-gradient(-120deg, rgba(72,61,139,1) 19%, rgba(108,117,125,1) 100%);
+}
+
+#cargando{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 1000;
+    background-color: darkslateblue;
+    flex-direction: column;
+}
+#cargando img{
+    aspect-ratio: 1/1;
+    width: 5rem;
+}
